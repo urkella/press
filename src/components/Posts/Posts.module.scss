@@ -1,0 +1,28 @@
+.root {
+  position: relative;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.pagination {
+  margin-top: 50px;
+}
+
+.error {
+  color: var(--failColor);
+
+  margin-top: 0;
+  margin-bottom: 0;
+}

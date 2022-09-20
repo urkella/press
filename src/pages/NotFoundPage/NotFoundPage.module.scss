@@ -1,0 +1,56 @@
+@import "../../styles/global.scss";
+
+:root {
+  --pageWidth: 1171px;
+  --sectionWidth: 930px;
+}
+
+.pageRoot {
+  max-width: var(--pageWidth);
+  margin: 0 auto;
+
+  padding: 50px 24px;
+
+  @media (min-width: 768px) {
+    padding: 100px 24px;
+  }
+}
+
+.sectionContent {
+  position: relative;
+}
+
+.title,
+.link {
+  display: block;
+  max-width: var(--sectionWidth);
+  margin: 0 auto;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &:hover {
+    & .linkIcon {
+      fill: var(--siteColorLight);
+    }
+  }
+}
+
+.linkIcon {
+  transition: var(--transitionStyle);
+}
+
+.divider {
+  margin: 25px 0;
+
+  /* Style */
+  height: 2px;
+  background-color: var(--matterColorAnti);
+
+  @media (min-width: 768px) {
+    margin: 50px 0;
+  }
+}
